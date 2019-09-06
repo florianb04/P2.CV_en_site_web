@@ -159,12 +159,27 @@ h2 {
 }
 
 /* ----- Loisirs ----- */
+
+.hobbies__box{
+    display: flex;
+    justify-content: center;
+}
+
 .fa__hobbies__circle{
     font-size: 2em;
-    padding: 20px;
+    padding: 1rem;
     border: 2px solid rgb(44, 44, 44); 
     border-radius: 50%;
+    margin: 1rem;
 }
+
+/* make hiking logo round */
+.fa__hobbies__hike{
+    padding: 1rem 1.2rem 1rem 1.2rem;
+}
+
+
+
 
 
 
