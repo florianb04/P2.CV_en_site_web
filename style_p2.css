@@ -77,11 +77,14 @@ h1, .first_name {
 }
 
 .timeline__training__box, .timeline__training__box__info, .timeline__training__box__desciption, 
-.timeline__experience__box, .timeline__experience__box__info ,.timeline__experience__box__desciption{
+.timeline__experience__box, .timeline__experience__box__info ,.timeline__experience__box__desciption,
+.timeline__voluntary__box, .timeline__voluntary__box__info, .timeline__voluntary__box__desciption{
     display: flex;
 }
 
-.timeline__training__box__desciption, .timeline__experience__box__desciption{
+.timeline__training__box__desciption, 
+.timeline__experience__box__desciption,
+.timeline__voluntary__box__desciption{
     flex-direction: column;
 }
 
@@ -93,19 +96,27 @@ h1, .first_name {
     color:rgb(199, 0, 10); /* dark red */
 }
 
-.timeline__experience__box__info__date, .timeline__training__box__info__date{
+.timeline__experience__box__info__date, 
+.timeline__training__box__info__date,
+.timeline__voluntary__box__info__date{
     margin:1.5em 1em 0 0;
 }
 
-.timeline__training__box__desciption__firm, .timeline__experience__box__desciption__firm{
+.timeline__training__box__desciption__firm, 
+.timeline__experience__box__desciption__firm,
+.timeline__voluntary__box__desciption__firm{
     margin: 1em 1em 1em 0;
 }
 
-.timeline__experience__box__desciption__list, .timeline__training__box__desciption__list{
+.timeline__experience__box__desciption__list, 
+.timeline__training__box__desciption__list
+.timeline__voluntary__box__desciption__list{
     padding-left: 1em;
 }
 
-.timeline__training__box__desciption__job, .timeline__experience__box__desciption__job{
+.timeline__training__box__desciption__job, 
+.timeline__experience__box__desciption__job,
+.timeline__voluntary__box__desciption__job{
     margin: 0;
 }
 
