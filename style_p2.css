@@ -129,6 +129,17 @@ h1, .first_name {
     color: rgb(180, 180, 180); /* l gray */
 }
 
+a, a:active, a:checked {
+    color: rgb(180, 180, 180); /* l gray */
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(180, 180, 180); /* l gray */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /* photo top */
 .info__fig {
     margin-top: 20px;
