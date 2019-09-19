@@ -198,18 +198,37 @@ h2 {
 
 
 
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/* --- SIZE Break point with media queries --- */
 
+/* --- Plus petit que 1200px de largeur */
+/* --- Ipad and smaller */
+@media screen and (max-width: 1200px) {
+    .hobbies__box {
+        flex-direction: column;
+    }
+    .fa__hobbies__circle{
+        margin: 1rem auto 1rem auto;
+    }
 
+}
 
-
-
-
-
-
-
-
+/*--- FIN Plus petit que 1024px de largeur --- */
+/*----------------------------------------------------------*/
+/* -- Plus petit que 670px de largeur -- */
 
 @media screen and (max-width: 670px)  {
+body{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.info {
+    width: 100%;
+}
+
 /*--------------------------*/
 /* -----  menu Burger ----- */
 .headerDivider{
@@ -326,7 +345,16 @@ h2 {
 	visibility: visible;
 	box-shadow: inset 5px -5px 5px 0px rgb(135, 0, 0);
 }
-
 /* ----- Fin burger ----- */
 /*--------------------------*/
 }
+
+/* -- FIN Plus petit que 670px de largeur -- */
+/*----------------------------------------------------------*/
+/* -- Plus petit que 350px de largeur -- */
+
+@media screen and (max-width: 350px) {
+
+}
+    /* -- FIN Plus petit que 350px de largeur -- */
+    /*----------------------------------------------------------*/
