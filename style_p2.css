@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 html, body {
-    height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
 }
@@ -11,7 +11,6 @@ body {
     font-family: "Dosis" , sans-serif;
     font-size: 1.2rem;
     color: #000000;
-    min-height: 100%;
 }
 
 
@@ -149,7 +148,6 @@ a:hover {
 /* photo top */
 .info__fig {
     padding: 15%;
-    height: 100%;
 }
 
 .info__fig__pic {
@@ -163,11 +161,6 @@ h2 {
     margin: 0px;
 } 
 
-.info__contact,
-.info__aboutMe,
-.hobbies {
-    height: 100%;
-}
 .info__contact__title {
     text-align: center;
     background-color: rgb(44, 44, 44); /*l gray*/
@@ -221,8 +214,8 @@ h2 {
 /* --- Ipad and smaller */
 @media screen and (max-width: 1200px) {
     .hobbies__box {
-        flex-direction: column;
     }
+    
     .fa__hobbies__circle{
         margin: 1rem auto 1rem auto;
     }
@@ -236,8 +229,6 @@ h2 {
 @media screen and (max-width: 670px)  {
 body{
     font-size: 0;
-    display: flex;
-    flex-direction: column-reverse;
 }
 
 .info {
