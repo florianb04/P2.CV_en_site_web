@@ -129,12 +129,12 @@ h1, .first_name {
     color: rgb(180, 180, 180); /* l gray */
 }
 
-a, a:active, a:checked {
+.info__contact__descpition__link, .info__contact__descpition__link:visited{
     color: rgb(180, 180, 180); /* l gray */
     text-decoration: none;
 }
 
-a:hover {
+.info__contact__descpition__link:hover {
     color: rgb(180, 180, 180); /* l gray */
     font-weight: bold;
     text-decoration: underline;
@@ -167,6 +167,10 @@ h2 {
     background-color: rgb(44, 44, 44); /*l gray*/
     color: rgb(255, 0, 13);
     padding: 0.5em 0 0.5em 0;
+}
+
+.info__aboutMe__text{
+    text-align: justify;
 }
 
 .info__contact__descpition, .info__aboutMe__text {
