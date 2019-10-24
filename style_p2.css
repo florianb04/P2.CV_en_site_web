@@ -148,6 +148,7 @@ a:hover {
 .info__fig__pic {
     width: 80%;
     transform: translateX(10%);
+    border-radius: 50%;
 }
 
 /* contact + a propos de moi */
@@ -156,6 +157,10 @@ h2 {
     font-size: 1.5em;
     margin: 0px;
 } 
+
+.info__contact{
+    word-break: break-all;
+}
 
 .info__contact__title {
     text-align: center;
@@ -221,7 +226,6 @@ h2 {
 
 @media screen and (max-width: 670px)  {
 body{
-    display: flex;
     flex-direction: column-reverse;
 }
 
