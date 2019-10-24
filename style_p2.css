@@ -135,12 +135,12 @@ h1, .first_name{
     color: rgb(180, 180, 180); /* l gray */
 }
 
-a, a:active, a:checked {
+.info__contact__descpition__link, .info__contact__descpition__link:visited{
     color: rgb(180, 180, 180); /* l gray */
     text-decoration: none;
 }
 
-a:hover {
+.info__contact__descpition__link:hover {
     color: rgb(180, 180, 180); /* l gray */
     font-weight: bold;
     text-decoration: underline;
@@ -153,7 +153,10 @@ a:hover {
 }
 
 .info__fig__pic {
-    width: 100%;
+    width: 80%;
+    transform: translateX(10%);
+    border-radius: 50%;
+
 }
 
 /* contact + a propos de moi */
@@ -163,11 +166,12 @@ h2 {
     margin: 0px;
 } 
 
-.info__contact,
-.info__aboutMe,
-.hobbies {
-    height: 100%;
+
+.info__contact{
+    word-break: break-all;
 }
+
+
 .info__contact__title {
     text-align: center;
     background-color: rgb(44, 44, 44); /*l gray*/
@@ -175,10 +179,12 @@ h2 {
     padding: 0.5em 0 0.5em 0;
 }
 
-.info__contact__descpition__label,
-.info__contact__descpition__control {
-    display: block;
+
+.info__aboutMe__text{
+    text-align: justify;
 }
+
+
 .info__contact__descpition, .info__aboutMe__text {
     padding: 0 1em 0 1em;
 }
@@ -235,6 +241,7 @@ h2 {
 
 @media screen and (max-width: 670px)  {
 body{
+
     font-size: 0;
     display: flex;
     flex-direction: column-reverse;
