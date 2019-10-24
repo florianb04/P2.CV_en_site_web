@@ -1,17 +1,19 @@
 * {
     box-sizing: border-box;
 }
-
-body {
-    width: 100%;
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+body {
+    width: 100%;
     font-family: "Dosis" , sans-serif;
     font-size: 1.2rem;
     color: #000000;
-    display: flex;
+    min-height: 100%;
 }
+
 
 .header_jobTitle{
     margin: 1em 0 0 0;
@@ -52,9 +54,8 @@ body {
 
 
 /* ----- intro (name and job title) ----- */
-h1, .first_name {
-    display:  flex;
-    flex-direction: row;
+h1, .first_name{
+    display: inline-block;
     margin: 0 0.4em 0 0;
     letter-spacing: 0.1rem;
 }
@@ -66,8 +67,11 @@ h1, .first_name {
 /* ----- div 1 white right pro and school information ----- */
 
 .timeline{
-    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
     padding: 3em 0 0 3em;
+    height: 100%;
 }
 
 .timeline__title__name{
@@ -124,6 +128,8 @@ h1, .first_name {
 
 /* ----- div 2 red with picture and ppersonnal informations ----- */
 .info {
+    display: inline-block;
+    vertical-align: top;
     background-color: rgb(199, 0, 10); /* dark red */
     width: 25%;
     color: rgb(180, 180, 180); /* l gray */
@@ -142,13 +148,15 @@ h1, .first_name {
 
 /* photo top */
 .info__fig {
-    margin-top: 20px;
+    padding: 15%;
+    height: 100%;
 }
 
 .info__fig__pic {
     width: 80%;
     transform: translateX(10%);
     border-radius: 50%;
+
 }
 
 /* contact + a propos de moi */
@@ -158,9 +166,11 @@ h2 {
     margin: 0px;
 } 
 
+
 .info__contact{
     word-break: break-all;
 }
+
 
 .info__contact__title {
     text-align: center;
@@ -169,9 +179,11 @@ h2 {
     padding: 0.5em 0 0.5em 0;
 }
 
+
 .info__aboutMe__text{
     text-align: justify;
 }
+
 
 .info__contact__descpition, .info__aboutMe__text {
     padding: 0 1em 0 1em;
@@ -180,8 +192,7 @@ h2 {
 /* ----- Loisirs ----- */
 
 .hobbies__box{
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .fa__hobbies__circle{
@@ -230,6 +241,9 @@ h2 {
 
 @media screen and (max-width: 670px)  {
 body{
+
+    font-size: 0;
+    display: flex;
     flex-direction: column-reverse;
 }
 
