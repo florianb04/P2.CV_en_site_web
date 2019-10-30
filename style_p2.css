@@ -129,6 +129,10 @@ h1, .first_name {
     color: rgb(180, 180, 180); /* l gray */
 }
 
+.info__contact__descpition__label{
+    display: block;
+}
+
 .info__contact__descpition__link, .info__contact__descpition__link:visited{
     color: rgb(180, 180, 180); /* l gray */
     text-decoration: none;
