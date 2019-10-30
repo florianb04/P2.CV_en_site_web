@@ -17,11 +17,12 @@ body {
     margin: 1em 0 0 0;
 }
 
-.header_jobTitle__hr{
-    width: 20%;
-    margin: 0.5em 0 0 0;
-    color:rgb(199, 0, 10); /* dark red */
-    margin: 0 0 4em 0;
+.header_jobTitle__hr__p{
+    margin: 0.5em 0 4em 0;
+    content: '';
+    width: 8rem;
+    height: 1.5px;
+    background: rgb(199, 0, 10); /* dark red */
 }
 
 /* hide the checkbox of the burger */
@@ -44,22 +45,25 @@ body {
     position: absolute;
 }
 
-.timeline__title__hr{
+.timeline__title__hr__p{
     width: 90%;
     margin: 0.5em 0 0 0;
-    color:rgb(199, 0, 10); /* dark red */
+    text-align: right;
+    content: '';
+    height: 1.5px;
+    background: rgb(199, 0, 10); /* dark red */
 }
 
 
 /* ----- intro (name and job title) ----- */
-h1, .first_name {
+.intro__name, .intro__name__firstName{
     display:  flex;
     flex-direction: row;
     margin: 0 0.4em 0 0;
     letter-spacing: 0.1rem;
 }
 
-.first_name {
+.intro__name__firstName{
     color:rgb(199, 0, 10); /* dark red */
 }
 
