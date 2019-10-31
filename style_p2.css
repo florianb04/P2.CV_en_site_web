@@ -79,6 +79,12 @@ body {
     margin-top: 2em;
 }
 
+.timeline__training__box,
+.timeline__experience__box,
+.timeline__voluntary__box{
+    position: relative;
+}
+
 .timeline__training__box, .timeline__training__box__info, .timeline__training__box__desciption, 
 .timeline__experience__box, .timeline__experience__box__info ,.timeline__experience__box__desciption,
 .timeline__voluntary__box, .timeline__voluntary__box__info, .timeline__voluntary__box__desciption{
@@ -94,7 +100,7 @@ body {
 .fa-dot-circle, .fa-circle{
     font-size: 1.5rem;
     top: 20%;
-    position: relative;
+    position: absolute;
     margin-right: 1em;
     color:rgb(199, 0, 10); /* dark red */
 }
@@ -102,7 +108,7 @@ body {
 .timeline__experience__box__info__date, 
 .timeline__training__box__info__date,
 .timeline__voluntary__box__info__date{
-    margin:1.5em 1em 0 0;
+    margin:1.5em 1em 0 2em;
 }
 
 .timeline__training__box__desciption__firm, 
@@ -216,7 +222,7 @@ h2 {
 /*----------------------------------------------------------*/
 /* --- SIZE Break point with media queries --- */
 
-/* --- Plus petit que 1200px de largeur */
+/* --- Plus petit que 1200px de largeur IPAD */
 /* --- Ipad and smaller */
 @media screen and (max-width: 1200px) {
 
@@ -229,9 +235,9 @@ h2 {
 
 }
 
-/*--- FIN Plus petit que 1024px de largeur --- */
+/*--- FIN Plus petit que 1024px de largeur IPAD --- */
 /*----------------------------------------------------------*/
-/* -- Plus petit que 670px de largeur -- */
+/* -- Plus petit que 670px de largeur MOBILE -- */
 
 @media screen and (max-width: 670px)  {
 body{
@@ -240,6 +246,11 @@ body{
 
 .info{
     width: 100%;
+}
+
+.timeline{
+    width: 95%;
+    padding: 1em 0 0 1em;
 }
 
 .info__fig__pic {
