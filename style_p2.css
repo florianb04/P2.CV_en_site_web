@@ -133,10 +133,6 @@ body {
     color: rgb(180, 180, 180); /* l gray */
 }
 
-.info__contact__descpition__label{
-    display: block;
-}
-
 .info__contact__descpition__link, .info__contact__descpition__link:visited{
     color: rgb(180, 180, 180); /* l gray */
     text-decoration: none;
@@ -223,12 +219,13 @@ h2 {
 /* --- Plus petit que 1200px de largeur */
 /* --- Ipad and smaller */
 @media screen and (max-width: 1200px) {
-    .hobbies__box {
-        flex-direction: column;
-    }
-    .fa__hobbies__circle{
-        margin: 1rem auto 1rem auto;
-    }
+
+.hobbies__box {
+    flex-direction: column;
+}
+.fa__hobbies__circle{
+    margin: 1rem auto 1rem auto;
+}
 
 }
 
@@ -241,8 +238,21 @@ body{
     flex-direction: column-reverse;
 }
 
-.info {
+.info{
     width: 100%;
+}
+
+.info__fig__pic {
+    width: 50%;
+    transform: translateX(50%);
+}
+
+.info__contact__descpition__label{
+    display: block;
+}
+
+.hobbies__box {
+    flex-direction: row;
 }
 
 /*--------------------------*/
