@@ -388,9 +388,9 @@ body{
 
 /* -- FIN Plus petit que 670px de largeur -- */
 /*----------------------------------------------------------*/
-/* -- Plus petit que 350px de largeur -- */
+/* -- Plus petit que 400px de largeur -- */
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
 
 }
     /* -- FIN Plus petit que 350px de largeur -- */
