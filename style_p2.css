@@ -325,7 +325,7 @@ body{
 
 /* nav/menu caché à gauche */
 .menu {
-	background: rgb(0, 0, 0); 
+	background: rgb(255, 255, 255); 
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -346,6 +346,7 @@ body{
 	top: 1rem;
     z-index: 5;
     margin: auto;
+    transform: translateY(50%);
 }
 
 /*   nav__ul__li  */
@@ -355,6 +356,7 @@ body{
 	transition-delay: 0s;
 	box-shadow: none;
     letter-spacing: 0;
+    list-style: none;
 }
 
 .menu__list__elem:hover {

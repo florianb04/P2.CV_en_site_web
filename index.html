@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="style_p2.css" /> <!-- wrong link in purpose-->
+	<link rel="stylesheet" href="./style_p2.css" /> <!-- wrong link in purpose-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">  <!-- Base responsive --> 
 	<link href="https://fonts.googleapis.com/css?family=Dosis|Inconsolata" rel="stylesheet">
 	<title>Mon C.V</title>
@@ -17,7 +17,7 @@
 			<img class="info__fig__pic" src="C.V_Pic_carre.jpg" alt="une photos d'indentité">
 		</figure>
 
-		<div class="info__contact">
+		<div class="info__contact" id="info__contact">
 			<h2 class="info__contact__title">CONTACT</h2>
 			<p class="info__contact__descpition">
 				<span class="info__contact__descpition__label">Adresse</span>
@@ -51,7 +51,7 @@
 			</p>
 		</div>
 
-		<div class="info__aboutMe">
+		<div class="info__aboutMe" id="info__aboutMe">
 			<h2 class="info__contact__title">À PROPOS DE MOI</h2>
 				<p class="info__aboutMe__text">Je suis étudiant chez OpenClassRooms à la recherche d'un contrat de professionnalisation, d'apprentissage.</p>
 				<p class="info__aboutMe__text">Je saurais m'adapter rapidement à ma future équipe grâce à ma sociabilité naturelle, à ma grande ouverture et mon empathie que j'ai pu acquérir lors de mes expériences de bénévole, d'assistant comptable et d'aide à la gestion.</p>
@@ -83,6 +83,16 @@
 				<span class="burger__cross__line"></span>
 				<span class="burger__cross__line"></span>
 			</label>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__list__elem menu__list__elem--active"><a class="menu__list__elem__link" href="#timeline__training">Formation</a></li>
+					<li class="menu__list__elem"><a class="menu__list__elem__link" href="#timeline__experience">Expériences</a></li>
+					<li class="menu__list__elem"><a class="menu__list__elem__link" href="#timeline__voluntary">Bénévolat</a></li>
+					<li class="menu__list__elem"><a class="menu__list__elem__link" href="#info__contact">Contact</a></li>
+					<li class="menu__list__elem"><a class="menu__list__elem__link" href="#info__aboutMe">À propos de moi</a></li>
+				</ul>
+			</nav>
+	
 
 			<p class="header_jobTitle">Développeur web en recherche d'alternance</p> 
 
@@ -95,7 +105,7 @@
 
 
 		<!--section formation -->
-		<section class="timeline__training">	
+		<section class="timeline__training" id="timeline__training"	>
 			<header class="timeline__title">
 				<i class="fas fa-graduation-cap timeline__title__fa"></i>
 				<h2 class="timeline__title__name">FORMATION</h2>
@@ -162,7 +172,7 @@
 		</section> <!--FIN div formation -->
 
 		<!-- section experiences -->
-		<section class="timeline__experience">
+		<section class="timeline__experience" id="timeline__experience">
 			<header class="timeline__title ">
 				<i class="fas fa-suitcase timeline__title__fa"></i>
 				<h2 class="timeline__title__name">EXPERIENCES</h2>
@@ -229,7 +239,7 @@
 		</section> <!-- FIN div experiences -->
 
 		<!--  section benevolat -->
-		<section class="timeline__voluntary">
+		<section class="timeline__voluntary" id="timeline__voluntary">
 			<header class="timeline__title ">
 				<i class="fas fa-hand-holding-heart timeline__title__fa"></i>
 				<h2 class="timeline__title__name">BÉNÉVOLAT</h2>
