@@ -13,6 +13,8 @@ body {
     display: flex;
 }
 
+
+
 .header_jobTitle{
     margin: 1em 0 0 0;
 }
@@ -29,6 +31,10 @@ body {
 .burger__checkbox{
     position: absolute;
     opacity: 0;
+}
+
+.menu, .burger__checkbox{
+    display: none;
 }
 
 /* ----- for both red and white part ----- */
@@ -293,7 +299,7 @@ body{
     margin-top: -1px;
     right: 0;
     display: block;
-    background:  rgb(135, 0, 0); /* dark red */
+    background:  rgb(0, 0, 0);
     transition: .5s;
 }
 
@@ -325,6 +331,7 @@ body{
 
 /* nav/menu caché à gauche */
 .menu {
+    display: block ;
 	background: rgb(255, 255, 255); 
 	position: fixed;
 	top: 0;
@@ -351,34 +358,23 @@ body{
 
 /*   nav__ul__li  */
 .menu__list__elem {
-	opacity: 1; /* to change */
-	transition: .5s;
-	transition-delay: 0s;
-	box-shadow: none;
-    letter-spacing: 0;
     list-style: none;
-}
-
-.menu__list__elem:hover {
-	box-shadow: none;
 }
 
 /*  nav__ul__li__a */
 .menu__list__elem__link {
 	text-decoration: none;
-	text-transform: uppercase;
 	color: #000000;
 	font-weight: 700;
-    font-family: "Dosis" , sans-serif;
 	display: block;
-	padding: 5px;
-	transform: translateY(0%);
+    padding: 5px;
+    font-size: 1.3em;
 }
 
 /* menu déployer */
 .burger__checkbox:checked ~ .menu { 
 	height: 55%;
-	width: 55%;
+	width: 45%;
 	transition-delay: 0s;
 	z-index: 2;
 	visibility: visible;
