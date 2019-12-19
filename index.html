@@ -4,76 +4,70 @@
 
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="./style/style_p2.css" /> <!-- wrong link in purpose-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">  <!-- Base responsive --> 
-	<link href="https://fonts.googleapis.com/css?family=Dosis|Inconsolata" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link rel="stylesheet" href="./style/style_p2.css" /> <!-- wrong link in purpose-->
 	<title>Mon C.V</title>
 </head>
 
 <body>
-	<!-- section 2 red with info-->
-	<aside id="info" class="info">
-		<figure class="info__fig">
-			<img class="info__fig__pic" src="./asset/images/C.V_Pic_carre.jpg" alt="une photos d'indentité">
+	<!-- section red with info-->
+	<section id="section_red">
+		<figure>
+			<img id="fig_pic" src="./asset/images/C.V_Pic_carre.jpg" alt="une photos d'indentité">
 		</figure>
 
-		<div class="info__contact" id="info__contact">
-			<h2 class="info__contact__title">CONTACT</h2>
-			<p class="info__contact__descpition">
-				<span class="info__contact__descpition__label">Adresse</span>
-				<span class="info__contact__descpition__control">
-					<a class="info__contact__descpition__link" href="https://goo.gl/maps/zHXareH5qNymZSqL8" target="_blank">Nice, France</a>
-				</span>
+		<div id="contact" class="info__contact">
+			<h3 id="red_title" class="title">CONTACT</h3>
+
+			<p class="pad_text">Adresse
+				<a class="contact_link" href="https://goo.gl/maps/zHXareH5qNymZSqL8" target="_blank">Nice, France</a>
 			</p>
-			<p class="info__contact__descpition">
-				<span class="info__contact__descpition__label">Téléphone</span>
-				<span class="info__contact__descpition__control">
-					<a class="info__contact__descpition__link" href="tel:+33666008221">06 66 00 82 21</a>
-				</span>
+
+			<p class="pad_text">Téléphone
+				<a class="contact_link" href="tel:+33666008221">06 66 00 82 21</a>
 			</p>
-			<p class="info__contact__descpition">
-				<span class="info__contact__descpition__label">Email</span>
-				<span class="info__contact__descpition__control">
-					<a class="info__contact__descpition__link" href="mailto:florianb04@gmail.com?subject=Session%20mentorat&body=Bonjour%20Florian">florianb04@gmail.com</a>
-				</span>
+
+			<p class="pad_text">Email
+				<a class="contact_link" href="mailto:florianb04@gmail.com?subject=Session%20mentorat&body=Bonjour%20Florian">florianb04@gmail.com</a>
 			</p>
-			<p class="info__contact__descpition">
-				<span class="info__contact__descpition__label">Site web</span>
-				<span class="info__contact__descpition__control">
-					<a class="info__contact__descpition__link" href="http://www.florianb04.com" target="_blank">www.florianb04.com</a>
-				</span>
+
+			<p class="pad_text">Site web
+				<a class="contact_link" href="http://www.florianb04.com" target="_blank">www.florianb04.com</a>
 			</p>
-			<p class="info__contact__descpition">
-				<span class="info__contact__descpition__label">LinkedIn</span>
-				<span class="info__contact__descpition__control">
-					<a class="info__contact__descpition__link" href="https://www.linkedin.com/in/florianb04/" target="_blank">www.linkedin.com/in/florianb04</a>
-				</span>
+
+			<p class="pad_text">LinkedIn
+					<a class="contact_link" href="https://www.linkedin.com/in/florianb04/" target="_blank">www.linkedin.com/in/florianb04</a>
 			</p>
 		</div>
 
-		<div class="info__aboutMe" id="info__aboutMe">
-			<h2 class="info__contact__title">À PROPOS DE MOI</h2>
-				<p class="info__aboutMe__text">Je suis étudiant chez OpenClassRooms à la recherche d'un contrat de professionnalisation, d'apprentissage.</p>
-				<p class="info__aboutMe__text">Je saurais m'adapter rapidement à ma future équipe grâce à ma sociabilité naturelle, à ma grande ouverture et mon empathie que j'ai pu acquérir lors de mes expériences de bénévole, d'assistant comptable et d'aide à la gestion.</p>
+		<div>
+			<h3 id="red_title" class="title">À PROPOS DE MOI</h3>
+			<p class="pad_text">Je suis étudiant chez OpenClassRooms à la recherche d'un contrat de professionnalisation, d'apprentissage.</p>
+			<p class="pad_text">Je saurais m'adapter rapidement à ma future équipe grâce à ma sociabilité naturelle, à ma grande ouverture et mon empathie que j'ai pu acquérir lors de mes expériences de bénévole, d'assistant comptable et d'aide à la gestion.</p>
 		</div>
 
-		<div class="hobbies">
-			<h2 class="info__contact__title">LOISIRS</h2>
-			<div class="hobbies__box">
+		<div>
+			<h3 id="red_title" class="title">LOISIRS</h3>
+			<div class="flex j-center">
 				<i class="fas fa-hiking fa__hobbies__circle fa__hobbies__hike"></i>
 				<i class="fas fa-laptop fa__hobbies__circle"></i>
 				<i class="fas fa-skating fa__hobbies__circle"></i>
 			</div>
 		</div>
-	</aside> <!-- FIN section secondaire ASIDE red with info-->
+	</section> <!-- FIN section secondaire red with info-->
 		
 
 	<!-- div principale blanche   -->
-	<div id="timeline" class="timeline">
+	<div id="div_white">
 
 		<!-- Haut de page fixe -->
-		<div class="intro">
-			<h1 class="intro__name"><span class="intro__name__firstName">FLORIAN </span> BLOT</h1>
+		<header>
+			<h2 id="noms"><span id="prenom">FLORIAN </span> BLOT</h2>
+
+			<h1 class="title">Développeur web en recherche d'alternance</h1> 
+
+			<p class="hr hr_main_header"></p>
 
 			<!-- menu burger pour mobile --> 
 			<input id="burger__checkbox" class="burger__checkbox" type="checkbox" />
@@ -92,30 +86,22 @@
 					<li class="menu__list__elem"><a class="menu__list__elem__link" href="#info__aboutMe">À propos de moi</a></li>
 				</ul>
 			</nav>
-	
+			<!-- FIN menu burger pour mobile FIN -->
 
-			<p class="header_jobTitle">Développeur web en recherche d'alternance</p> 
-
-			<div class="header_jobTitle__hr">
-				<p class="header_jobTitle__hr__p"></p>
-			</div>
-
-		</div>
+		</header>
 		
 
 
 		<!--section formation -->
 		<section class="timeline__training" id="timeline__training"	>
 			<header class="timeline__title">
-				<i class="fas fa-graduation-cap timeline__title__fa"></i>
-				<h2 class="timeline__title__name">FORMATION</h2>
-				<div class="timeline__title__hr">
-					<p class="timeline__title__hr__p"></p>
-				</div>
+				<i class="fas fa-graduation-cap fa_rouge"></i>
+				<h3 class="title tittle_white">FORMATION</h3>
+				<p class="hr hr_arcticle"></p>
 			</header>
 
 			<!-- formation / ecole 1 -->
-			<div class="timeline__training__box">
+			<article class="timeline__training__box">
 
 				<div class="timeline__training__box__info">
 					<i class="far fa-dot-circle"></i>
@@ -123,7 +109,7 @@
 				</div>
 
 				<div class="timeline__training__box__desciption">
-					<h3 class="timeline__training__box__desciption__firm">OPENCLASSROOMS</h3>
+					<p class="timeline__training__box__desciption__firm">OPENCLASSROOMS</p>
 					<p class="timeline__training__box__desciption__job">Developpeur web</p>
 					<ul class="timeline__training__box__desciption__list">
 						<li class="timeline__training__box__desciption__list__elem">Prise en charge d’un besoin client</li>
@@ -133,10 +119,10 @@
 						<li class="timeline__training__box__desciption__list__elem">Recette utilisateur</li>
 					</ul>
 				</div>
-			</div>
+			</article>
 
 			<!--  formation / ecole 2 -->
-			<div class="timeline__training__box">
+			<article class="timeline__training__box">
 
 				<div class="timeline__training__box__info">
 					<i class="fas fa-circle"></i>
@@ -144,16 +130,16 @@
 				</div>
 
 				<div class="timeline__training__box__desciption">
-					<h3 class="timeline__training__box__desciption__firm">CNED</h3>
+					<p class="timeline__training__box__desciption__firm">CNED</p>
 					<p class="timeline__training__box__desciption__job">Étudiant Seconde à terminale</p>
 					<ul class="timeline__training__box__desciption__list">
 						<li class="timeline__training__box__desciption__list__elem">apprentissage en autonomie</li>
 					</ul>
 				</div>
-			</div>
+			</article>
 
 			<!--  formation / ecole 3 -->
-			<div class="timeline__training__box">
+			<article class="timeline__training__box">
 
 				<div class="timeline__training__box__info">
 					<i class="fas fa-circle"></i>
@@ -161,28 +147,26 @@
 				</div>
 
 				<div class="timeline__training__box__desciption">
-					<h3 class="timeline__training__box__desciption__firm">Collège les jacobins</h3>
+					<p class="timeline__training__box__desciption__firm">Collège les jacobins</p>
 					<p class="timeline__training__box__desciption__job">Étudiant</p>
 					<ul class="timeline__training__box__desciption__list">
 						<li class="timeline__training__box__desciption__list__elem">Obtention du brevet des collèges</li>
 					</ul>
 				</div>
-			</div>
+			</article>
 
 		</section> <!--FIN div formation -->
 
 		<!-- section experiences -->
 		<section class="timeline__experience" id="timeline__experience">
 			<header class="timeline__title ">
-				<i class="fas fa-suitcase timeline__title__fa"></i>
-				<h2 class="timeline__title__name">EXPERIENCES</h2>
-				<div class="timeline__title__hr">
-					<p class="timeline__title__hr__p"></p>
-				</div>
+				<i class="fas fa-suitcase fa_rouge"></i>
+				<h3 class="title tittle_white">EXPERIENCES</h3>
+				<p class="hr hr_arcticle"></p>
 			</header>
 
 			<!-- experience 1 -->
-			<div class="timeline__experience__box">
+			<article class="timeline__experience__box">
 
 				<div class="timeline__experience__box__info">
 					<i class="far fa-dot-circle"></i>
@@ -190,7 +174,7 @@
 				</div>
 
 				<div class="timeline__experience__box__desciption">
-					<h3 class="timeline__experience__box__desciption__firm">OPENCLASSROOMS</h3>
+					<p class="timeline__experience__box__desciption__firm">OPENCLASSROOMS</p>
 					<p class="timeline__experience__box__desciption__job">Developpeur web Junior</p>
 					<ul class="timeline__experience__box__desciption__list">
 						<li class="timeline__experience__box__desciption__list__elem">HTML5 et CSS3 : de la maquette à la page web</li>
@@ -199,10 +183,10 @@
 						<li class="timeline__experience__box__desciption__list__elem">Intégration : contenus textes, images, sons, vidéos dans le code HTML5</li>
 					</ul>
 				</div>
-			</div>
+			</article>
 
 			<!-- experience 2 -->
-			<div class="timeline__experience__box">
+			<article class="timeline__experience__box">
 
 				<div class="timeline__experience__box__info">
 					<i class="fas fa-circle"></i>
@@ -210,16 +194,16 @@
 				</div>
 
 				<div class="timeline__experience__box__desciption">
-					<h3 class="timeline__experience__box__desciption__firm">Aston English ZHAOQING</h3>
+					<p class="timeline__experience__box__desciption__firm">Aston English ZHAOQING</p>
 					<p class="timeline__experience__box__desciption__job">Professeur de langues</p>
 					<ul class="timeline__experience__box__desciption__list">
 						<li class="timeline__experience__box__desciption__list__elem">apprentissage du Français et de l'Anglais en sessions individuelles</li>
 					</ul>
 				</div>
-			</div>
+			</article>
 
 			<!-- experience 3 -->
-			<div class="timeline__experience__box">
+			<article class="timeline__experience__box">
 
 				<div class="timeline__experience__box__info">
 					<i class="fas fa-circle"></i>
@@ -227,7 +211,7 @@
 				</div>
 
 				<div class="timeline__experience__box__desciption">
-					<h3 class="timeline__experience__box__desciption__firm">Cabinet comptable</h3>
+					<p class="timeline__experience__box__desciption__firm">Cabinet comptable</p>
 					<p class="timeline__experience__box__desciption__job">Assistant comptable</p>
 					<ul class="timeline__experience__box__desciption__list">
 						<li class="timeline__experience__box__desciption__list__elem">Contact professionnel avec la clientèle</li>
@@ -235,20 +219,18 @@
 						<li class="timeline__experience__box__desciption__list__elem">Conseils marketing</li>
 					</ul>
 				</div>
-			</div>
+			</article>
 		</section> <!-- FIN div experiences -->
 
 		<!--  section benevolat -->
 		<section class="timeline__voluntary" id="timeline__voluntary">
-			<header class="timeline__title ">
-				<i class="fas fa-hand-holding-heart timeline__title__fa"></i>
-				<h2 class="timeline__title__name">BÉNÉVOLAT</h2>
-				<div class="timeline__title__hr">
-					<p class="timeline__title__hr__p"></p>
-				</div>
+			<header>
+				<i class="fas fa-hand-holding-heart fa_rouge"></i>
+				<h3 class="title tittle_white">BÉNÉVOLAT</h3>
+				<p class="hr hr_arcticle"></p> 
 			</header>
 
-			<div class="timeline__voluntary__box">
+			<article class="timeline__voluntary__box">
 
 				<div class="timeline__voluntary__box__info">
 					<i class="fas fa-circle"></i>
@@ -256,13 +238,13 @@
 				</div>
 
 				<div class="timeline__voluntary__box__desciption">
-					<h3 class="timeline__voluntary__box__desciption__firm">Association de quartier</h3>
+					<p class="timeline__voluntary__box__desciption__firm">Association de quartier</p>
 					<p class="timeline__voluntary__box__desciption__job">Professeur d’informatique</p>
 					<ul class="timeline__voluntary__box__desciption__list">
 						<li class="timeline__voluntary__box__desciption__list__elem">Pédagogie et patience lors de l’enseignement de l’informatique aux personnes âgées</li>
 					</ul>
 				</div>
-			</div>
+			</article>
 
 
 		</section><!--  FIN div Recommandation -->
