@@ -62,11 +62,22 @@ body{
     text-decoration: underline;
 }
 
-/* police div blanche */
+/* FA titre des articles */
 .fa_rouge{
     font-size: 1.5em;
     color:rgb(199, 0, 10);
 }
+/* FA cercles a cote des dates */
+.f-size_L {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.circle_sizeM{
+    font-size: 1.2em;
+    color:rgb(199, 0, 10);
+}
+
 
 /* ---------------------------------------- */
 /* == ÉLÉMENTS PRINCIPAUX */
@@ -83,9 +94,27 @@ body{
     display: flex;
 }
 
-/*     Justify / align  / display    */
+/*     Justify / align  / display / position   */
 .j-center{
     justify-content: center;
+}
+.a-center{
+    align-items: center;
+}
+
+.p-relative{
+    position: relative;
+}
+.d-inlineBlock{
+    display: inline-block;
+}
+
+.v-alignTop{
+    vertical-align: top;
+}
+
+.v-alignTextTop{
+    vertical-align: text-top;
 }
 
 /* def base hr */
@@ -172,6 +201,17 @@ body{
     width: 90%;
     margin: 0.5em 0 0 0;
 }
+
+.article_white{
+    position: relative;
+    align-items: center;
+}
+
+.dates{
+    margin: 1em;
+}
+
+
 
 /*     sous partie      */
 
