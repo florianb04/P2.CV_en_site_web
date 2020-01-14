@@ -298,7 +298,7 @@ body{
     
     /* nav/menu caché à droite */
     .menu {
-        background: rgb(100, 247, 137); 
+        background: rgb(255, 255, 255); 
         position: fixed;
         top: 0;
         right: 0;
@@ -316,10 +316,12 @@ body{
     /* ------------------ WORK HERE  mettre en forme l'intérieur du menu burger--------------- */
     .menu__list {
         position: absolute;
-        top: 1rem;
+        top: 50%;
         z-index: 5;
         margin: auto;
         display: block;
+        transform: translateY(-50%);
+        font-size: 2rem;
     }
 
      .menu__list__elem{
@@ -378,4 +380,20 @@ body{
     }
         
     /* -- FIN Plus petit que 670px de largeur -- */
+    /*----------------------------------------------------------*/
+
+    /* -- Plus petit que 450px de largeur -- */
+@media screen and (max-width: 450px)  {
+    
+    .burger__checkbox:checked ~ .menu { 
+        height: 50%;
+        width: 90%;
+    }
+
+    .menu{
+        width: 90%;
+    }
+
+    }
+    /* -- FIN Plus petit que 4500px de largeur -- */
     /*----------------------------------------------------------*/
