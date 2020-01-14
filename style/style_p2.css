@@ -59,6 +59,7 @@ body{
 .contact_link:visited{
     color: rgb(180, 180, 180);
     text-decoration: none;
+    word-break: break-all;
 }
 
 .contact_link:hover{
@@ -157,6 +158,7 @@ body{
 #section_red{
     background-color:rgb(199, 0, 10);
     width: 25%;
+    position: relative;
 }
 .pad_text{
     padding: 0 1em;
@@ -167,13 +169,17 @@ body{
     transform: translateX(10%);
     border-radius: 50%;
 }
-/*     sous partie: div Contact      */
-#info__contact{
-    word-break: break-all;
-}
+
 /*     sous partie: div A propos de moi    */
 
 /*     sous partie: div loisir    */
+#bloc-loisirs{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 
 .fa__hobbies__circle{
     font-size: 2em;
@@ -225,8 +231,8 @@ body{
 /* ==       MEDIAS QUERIS        */
 /*---------------------------------------- */
 
-/* -- Plus petit que 670px de largeur -- */
 
+/* -- Plus petit que 670px de largeur -- */
 @media screen and (max-width: 670px)  {
 
     /*--------------------------*/
