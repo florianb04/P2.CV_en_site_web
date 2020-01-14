@@ -186,7 +186,7 @@ body{
     padding: 1rem;
     border: 2px solid rgb(44, 44, 44); 
     border-radius: 50%;
-    margin: 1rem;
+    margin: 1rem auto;
 }
     /* make hiking logo round */
 .fa__hobbies__hike{
@@ -208,17 +208,9 @@ body{
     border-bottom: 2px solid rgb(199, 0, 10);
 }
 
-.tittle_white {
+.title_white {
     width: 94%;
-    /* display: inline-block;
-    margin: 2em 0 0 1em;
-    */
 } 
-
-.article_white{
-    position: relative;
-    align-items: center;
-}
 
 .dates{
     margin: 1em;
@@ -234,6 +226,18 @@ body{
 /* ---------------------------------------- */
 /* ==       MEDIAS QUERIS        */
 /*---------------------------------------- */
+/* --- Plus petit que 1024px de largeur */
+@media screen and (max-width: 1024px) {
+
+    #bloc-FA{
+        flex-direction: column;
+    }
+
+    .title_white {
+        width: 88%;
+    } 
+
+}
 
 
 /* -- Plus petit que 670px de largeur -- */
@@ -322,12 +326,6 @@ body{
         text-decoration: none;
     }
 
-    /*
-    .menu__list__elem:hover {
-        box-shadow: none;
-    }     */
-
-
     /*  nav__ul__li__a */
     .menu__list__elem__link {
         text-decoration: none;
@@ -348,12 +346,11 @@ body{
         visibility: visible;
         box-shadow: inset 5px -5px 5px 0px rgb(199, 0, 10);
     }
+
     .burger__checkbox:checked ~ .menu__list { 
         display: block;
     }
 
-
-    
     /* ----- Fin burger ----- */
     /*--------------------------*/
     
@@ -364,12 +361,21 @@ body{
     #section_red {
         width: 100%;
     }
-    
-    /* .projects_p0{
-        width: auto;
-    } */
-    
+
+    /* div 90% pour ne pas etre gené par la barre de scrool */
+    #div_white{
+        width: 90%;
+    }
+
+    #bloc-loisirs{
+        position: relative;
+    }
+
+    #bloc-FA{
+        flex-direction: row;
     }
     
+    }
+        
     /* -- FIN Plus petit que 670px de largeur -- */
     /*----------------------------------------------------------*/
