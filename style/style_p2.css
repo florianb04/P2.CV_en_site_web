@@ -186,13 +186,20 @@ body{
     width: 100%;
 }
 
+#bloc-FA{
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fa_box{
+    border: 2px solid rgb(44, 44, 44); 
+    border-radius: 50%;
+    margin: 1rem;
+}
 
 .fa__hobbies__circle{
     font-size: 2em;
     padding: 1rem;
-    border: 2px solid rgb(44, 44, 44); 
-    border-radius: 50%;
-    margin: 1rem auto;
 }
     /* make hiking logo round */
 .fa__hobbies__hike{
@@ -232,8 +239,8 @@ body{
 /* ---------------------------------------- */
 /* ==       MEDIAS QUERIS        */
 /*---------------------------------------- */
-/* --- Plus petit que 1024px de largeur */
-@media screen and (max-width: 1024px) {
+/* --- Plus petit que 1200px de largeur */
+@media screen and (max-width: 1200px) {
 
     #bloc-FA{
         flex-direction: column;
