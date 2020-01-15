@@ -107,11 +107,6 @@ body{
 .j-center{
     justify-content: center;
 }
-
-.text-justify{
-    text-align: justify;
-}
-
 .a-center{
     align-items: center;
 }
@@ -146,7 +141,6 @@ body{
 .burger__checkbox{
     position: absolute;
     opacity: 0;
-    display: none;
 }
 
 .menu__list {
